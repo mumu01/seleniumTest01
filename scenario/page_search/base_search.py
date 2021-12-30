@@ -50,7 +50,7 @@ class BaseSearch:
         v_xpath = "(//div[@class='Layout-sc-nxg1ff-0 fa-DJcD'])[%s]" % 10
         driver.find_element(By.XPATH, v_xpath).click()
 
-        time.sleep(5)
+        time.sleep(10)
         videoPlayer = driver.find_element(By.CSS_SELECTOR, "video")
         play_result = driver.execute_script("return arguments[0].play();", videoPlayer)
         time.sleep(20)
