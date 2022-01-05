@@ -11,9 +11,6 @@ class ControlSearch:
             search_action = base_search.BaseSearch
             result = search_action.check_user_name(self, driver, video_count_value, user_name)
 
-            if result:
-                # true = 找到同名離開, false = 繼續找
-                break
 
             if i == 2:
                 # 沒找到就撥最後一筆

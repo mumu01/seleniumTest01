@@ -53,6 +53,7 @@ class BaseSearch:
         time.sleep(10)
         videoPlayer = driver.find_element(By.CSS_SELECTOR, "video")
         play_result = driver.execute_script("return arguments[0].play();", videoPlayer)
+
         time.sleep(20)
 
         print(play_result)
